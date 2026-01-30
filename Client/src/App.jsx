@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
+
 
 import ScrolltoTop from "./components/ScrolltoTop";
 import ProtectedRoute from "./components/ProtectedRoute";
