@@ -57,7 +57,7 @@ const Footer = () => {
           <div className="space-y-6">
             <Link to="/" className="flex items-center gap-3 group">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-600 blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                <div className="absolute inset-0 bg-linear-to-br from-cyan-500 to-blue-600 blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
                 <div className="relative w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-xl transform group-hover:scale-110 transition-all duration-500">
                   <Store className="text-white" size={24} strokeWidth={2.5} />
                   <MapPin
