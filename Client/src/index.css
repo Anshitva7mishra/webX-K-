@@ -9,3 +9,15 @@
   --color-base-200: #020617;
   --color-base-300: #020617;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
