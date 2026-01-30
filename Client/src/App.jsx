@@ -5,11 +5,15 @@ import Services from "./pages/Services";
 import Location from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import ScrolltoTop from "./components/ScrolltoTop";
 
 function App() {
   return (
       <div>
+        
+          <ScrolltoTop />
         <Routes>
+
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
