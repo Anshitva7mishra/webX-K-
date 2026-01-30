@@ -345,14 +345,14 @@ const Home = () => {
         {/* 1. Quick Highlights Section */}
         <motion.section
           ref={statsRef}
-          className="relative -mt-20 z-10 px-4"
+          className="relative bg-slate-950 -mt-20 z-10 px-4"
           initial="hidden"
           animate={isStatsInView ? "visible" : "hidden"}
           variants={containerVariants}
         >
           <div className="max-w-7xl mx-auto">
             <motion.div
-              className="glass-card rounded-4xl p-8 md:p-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center shadow-2xl"
+              className="glass-card rounded-4xl bg-slate-950 p-8 md:p-12 lg:mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center shadow-2xl"
               variants={scaleVariants}
             >
               {stats.map((stat, idx) => (

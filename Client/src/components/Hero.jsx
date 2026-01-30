@@ -81,7 +81,7 @@ const Hero = () => {
             x: useTransform(mouseXSpring, [-0.5, 0.5], [50, -50]),
             y: useTransform(mouseYSpring, [-0.5, 0.5], [50, -50]),
           }}
-          className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] bg-blue-600/20 rounded-full blur-[120px]"
+          className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] bg-slate-950 rounded-full blur-[120px]"
         />
         <motion.div
           style={{
@@ -100,7 +100,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20 w-full">
+      <div className="relative z-10 max-w-7xl bg-slate-950 mx-auto px-6 lg:px-8 py-20 w-full">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* 2. LEFT COLUMN: TEXT CONTENT */}
           <motion.div
@@ -190,7 +190,7 @@ const Hero = () => {
                   {[1, 2, 3].map((i) => (
                     <div
                       key={i}
-                      className="w-8 h-8 rounded-full border-2 border-[#020617] bg-slate-800 flex items-center justify-center text-[10px] text-white font-bold overflow-hidden"
+                      className="w-8 h-8 rounded-full border-2 border-[#020617] bg-slate-900 flex items-center justify-center text-[10px] text-white font-bold overflow-hidden"
                     >
                       <img
                         src={`https://i.pravatar.cc/100?img=${i + 10}`}
