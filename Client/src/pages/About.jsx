@@ -296,7 +296,7 @@ const About = () => {
               <div className="relative h-80 rounded-2xl overflow-hidden mb-6 border border-white/10 shadow-2xl bg-slate-900">
                 <div className="absolute left-0 top-0 bottom-0 w-1/2 overflow-hidden border-r border-white/20">
                   <img
-                    src="https://images.unsplash.com/photo-1503951914875-befbb711d383?q=80&w=1000&auto=format&fit=crop"
+                    src="https://cdn.barbarossanyc.com/wp-content/uploads/2024/11/15143830/02.jpg"
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                     alt="Barber Shop"
                   />
