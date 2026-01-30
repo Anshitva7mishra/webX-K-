@@ -2,7 +2,7 @@ import Home from './pages/Home'
 
 const App = () => {
   return (
-    <div>
+    <div className='bg-primary' >
       <Home />
     </div>
   )
