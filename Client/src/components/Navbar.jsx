@@ -28,7 +28,6 @@ const Navbar = () => {
     { path: "/about", label: "About Us", icon: <Info size={18} /> },
     { path: "/services", label: "Services", icon: <Briefcase size={18} /> },
     { path: "/gallery", label: "Gallery", icon: <Image size={18} /> },
-    { path: "/location", label: "Location", icon: <MapPin size={18} /> },
     { path: "/contact", label: "Contact", icon: <Mail size={18} /> },
   ];
 
@@ -129,19 +128,7 @@ const Navbar = () => {
         .nav-link-active {
           position: relative;
         }
-
-        .nav-link-active::after {
-          content: '';
-          position: absolute;
-          bottom: -4px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 4px;
-          height: 4px;
-          background: currentColor;
-          border-radius: 50%;
-          animation: pulse-glow 2s ease-in-out infinite;
-        }
+       
       `}</style>
 
       <nav
@@ -237,32 +224,31 @@ const Navbar = () => {
               </div>
 
               <div className="flex items-center gap-3 sm:gap-4">
-                <SignedOut>
-                  <div className="hidden sm:block">
+                <div className="hidden sm:block w-30">
+                  <SignedOut>
                     <SignInButton mode="modal">
                       <button className="glow-on-hover relative px-6 py-2.5 bg-linear-to-r from-primary via-secondary to-primary bg-size-[200%_100%] text-white text-sm font-bold tracking-wide rounded-xl transition-all duration-300 hover:bg-position-[100%_0] shadow-lg shadow-primary/30 active:scale-95 overflow-hidden">
                         <span className="relative z-10">SIGN IN</span>
                       </button>
                     </SignInButton>
-                  </div>
-                </SignedOut>
+                  </SignedOut>
 
-                <SignedIn>
-                  <div className="relative group">
-                    <div className="absolute -inset-1 bg-linear-to-r from-primary to-secondary rounded-full opacity-75 blur group-hover:opacity-100 transition-opacity" />
-                    <div className="relative">
-                      <UserButton
-                        appearance={{
-                          elements: {
-                            avatarBox: "w-10 h-10 ring-2 ring-white/20",
-                          },
-                        }}
-                      />
+                  <SignedIn>
+                    <div className="relative group inline-block">
+                      <div className="absolute -inset-1 bg-linear-to-r from-primary to-secondary rounded-full opacity-75 blur group-hover:opacity-100 transition-opacity" />
+                      <div className="relative">
+                        <UserButton
+                          appearance={{
+                            elements: {
+                              avatarBox: "w-10 h-10 ring-2 ring-white/20",
+                            },
+                          }}
+                        />
+                      </div>
                     </div>
-                  </div>
-                </SignedIn>
+                  </SignedIn>
+                </div>
 
-                {/* Mobile Menu Button */}
                 <button
                   onClick={() => setIsOpen(!isOpen)}
                   className="md:lg:hidden relative w-11 h-11 flex items-center justify-center rounded-xl bg-white/5 text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-300 active:scale-95 border border-white/10"
