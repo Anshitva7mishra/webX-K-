@@ -1,11 +1,24 @@
-import Home from './pages/Home'
+import { Routes, Route, Navigate } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Location from "./pages/Location";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
-const App = () => {
+function App() {
   return (
-    <div className='bg-primary' >
-      <Home />
-    </div>
-  )
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/location" element={<Location />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+  );
 }
 
-export default App
+export default App;
