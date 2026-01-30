@@ -77,8 +77,8 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed">
-              Connecting local businesses with their community. Discover the best
-              shops, services, and experiences near you.
+              Connecting local businesses with their community. Discover the
+              best shops, services, and experiences near you.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => (
@@ -117,10 +117,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
           <div>
             <h3 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
-              <span className="w-1 h-6 bg-gradient-to-b from-cyan-400 to-blue-600 rounded-full"></span>
+              <span className="w-1 h-6 bg-linear-to-b from-cyan-400 to-blue-600 rounded-full"></span>
               Our Services
             </h3>
             <ul className="space-y-3">
@@ -138,27 +137,23 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h3 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
-              <span className="w-1 h-6 bg-gradient-to-b from-cyan-400 to-blue-600 rounded-full"></span>
+              <span className="w-1 h-6 bg-linear-to-b from-cyan-400 to-blue-600 rounded-full"></span>
               Get In Touch
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm">
                 <MapPin
                   size={18}
-                  className="text-cyan-400 mt-0.5 flex-shrink-0"
+                  className="text-cyan-400 mt-0.5 shrink-0"
                 />
                 <span className="text-slate-400">
                   123 Business Street, Mathura, Uttar Pradesh, India
                 </span>
               </li>
               <li className="flex items-center gap-3 text-sm">
-                <Phone
-                  size={18}
-                  className="text-cyan-400 flex-shrink-0"
-                />
+                <Phone size={18} className="text-cyan-400 shrink-0" />
                 <a
                   href="tel:+911234567890"
                   className="text-slate-400 hover:text-cyan-400 transition-colors"
@@ -167,10 +162,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="flex items-center gap-3 text-sm">
-                <Mail
-                  size={18}
-                  className="text-cyan-400 flex-shrink-0"
-                />
+                <Mail size={18} className="text-cyan-400 shrink-0" />
                 <a
                   href="mailto:info@nearby.com"
                   className="text-slate-400 hover:text-cyan-400 transition-colors"
@@ -181,7 +173,7 @@ const Footer = () => {
               <li className="flex items-start gap-3 text-sm">
                 <Clock
                   size={18}
-                  className="text-cyan-400 mt-0.5 flex-shrink-0"
+                  className="text-cyan-400 mt-0.5 shrink-0"
                 />
                 <span className="text-slate-400">
                   Mon - Fri: 9:00 AM - 6:00 PM
@@ -193,12 +185,9 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Section */}
         <div className="mt-16 pt-12 border-t border-white/5">
           <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-white mb-3">
-              Stay Updated
-            </h3>
+            <h3 className="text-2xl font-bold text-white mb-3">Stay Updated</h3>
             <p className="text-slate-400 mb-6">
               Subscribe to our newsletter for the latest local business updates
               and exclusive offers.
@@ -209,7 +198,7 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500/50 transition-all"
               />
-              <button className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 hover:scale-105 whitespace-nowrap">
+              <button className="px-6 py-3 bg-linear-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 hover:scale-105 whitespace-nowrap">
                 Subscribe
               </button>
             </div>
@@ -217,12 +206,12 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="relative border-t border-white/5 bg-black/20">
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-slate-400 text-center md:text-left">
-              © {new Date().getFullYear()} NearBy. All rights reserved. Made with{" "}
+              © {new Date().getFullYear()} NearBy. All rights reserved. Made
+              with{" "}
               <Heart
                 size={14}
                 className="inline text-red-500 fill-red-500 animate-pulse"
@@ -252,18 +241,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Scroll to Top Button */}
-      <button
-        onClick={scrollToTop}
-        className="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 text-white rounded-full shadow-lg shadow-cyan-500/30 flex items-center justify-center hover:scale-110 transition-all duration-300 z-50 group"
-        aria-label="Scroll to top"
-      >
-        <ArrowUp
-          size={20}
-          className="group-hover:-translate-y-1 transition-transform"
-        />
-      </button>
     </footer>
   );
 };
