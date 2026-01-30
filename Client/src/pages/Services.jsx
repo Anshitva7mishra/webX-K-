@@ -260,7 +260,7 @@ const ServicesPage = () => {
       : services.filter((s) => s.category === activeCategory);
 
   return (
-    <div className="min-h-screen bg-[#030712] text-slate-300 font-sans selection:bg-indigo-500/30 overflow-x-hidden">
+    <div className="min-h-screen bg-slate-950 text-slate-300 font-sans selection:bg-indigo-500/30 overflow-x-hidden">
       <Navbar />
 
       {/* Background Glows */}

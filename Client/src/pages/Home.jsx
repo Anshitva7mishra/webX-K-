@@ -338,7 +338,7 @@ const Home = () => {
         }
       `}</style>
 
-      <div className="home-container text-white min-h-screen">
+      <div className="home-container bg-slate-950  text-white min-h-screen">
         <Navbar />
         <Hero />
 
@@ -653,7 +653,7 @@ const Home = () => {
               className="brand-text text-5xl md:text-6xl font-bold mb-8 leading-tight"
               variants={itemVariants}
             >
-              Serving <span className="gradient-text">Jhanshi</span> <br />
+              Serving <span className="gradient-text">Jhansi</span> <br />
               Since 2014
             </motion.h2>
 

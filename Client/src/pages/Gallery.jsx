@@ -120,7 +120,7 @@ const Gallery = () => {
       : galleryItems.filter((item) => item.category === activeCategory);
 
   return (
-    <div className="bg-[var(--color-base-100)] min-h-screen text-slate-300 font-sans selection:bg-cyan-500/30 overflow-x-hidden relative">
+    <div className="bg-slate-950 min-h-screen text-slate-300 font-sans selection:bg-cyan-500/30 overflow-x-hidden relative">
       <Navbar />
 
      

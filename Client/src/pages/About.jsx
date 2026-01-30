@@ -58,7 +58,7 @@ const floatAnimation = {
 
 const About = () => {
   return (
-    <div className="bg-[var(--color-base-100)] min-h-screen text-slate-300 font-sans selection:bg-cyan-500/30 overflow-x-hidden">
+    <div className="bg-slate-950 min-h-screen text-slate-300 font-sans selection:bg-cyan-500/30 overflow-x-hidden">
       <Navbar />
 
       <div className="fixed inset-0 pointer-events-none z-0">

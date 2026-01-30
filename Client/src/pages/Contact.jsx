@@ -101,7 +101,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-[#020617] text-slate-300 selection:bg-indigo-500/30 overflow-x-hidden">
+    <div className="min-h-screen bg-slate-950 text-slate-300 selection:bg-indigo-500/30 overflow-x-hidden">
       <Navbar />
 
       <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-20">
@@ -118,7 +118,7 @@ export default function Contact() {
               </span>
             </div>
             <h1 className="text-5xl sm:text-8xl lg:text-[10rem] font-bold text-white leading-[0.8] tracking-tighter">
-              SAY <br /> <span className="text-indigo-600">HELLO.</span>
+              SAY <br /> <span>HELLO.</span>
             </h1>
           </motion.div>
 
